@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #18233f;
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #59657d;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cover {
+    height: 125px;
+    background: linear-gradient(135deg, #4169e1, #7040e8);
+}
+
+.profile {
+    margin-top: -65px;
+}
+
+.avatar img {
+    width: 130px;
+    height: 130px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f0f3f8;
+    border: 6px solid white;
+
+    border-radius: 50%;
+
+    font-size: 55px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.profile h2 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.profession {
+    color: #6546e8;
+    font-size: 21px;
+    margin-top: 8px;
+}
+
+.details {
+    margin: 30px 40px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr;
+
+    align-items: center;
+
+    padding: 20px 5px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: left;
+}
+
+.icon {
+    font-size: 22px;
+}
+
+.label {
+    font-size: 18px;
+}
+
+.detail > span:last-child {
+    text-align: right;
+    font-size: 17px;
+}
+
+.quote {
+    margin: 20px 40px 40px;
+
+    padding: 25px;
+
+    background: #eef4ff;
+
+    border-radius: 15px;
+
+    text-align: left;
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .detail {
+        grid-template-columns: 35px 1fr;
+        gap: 8px;
+    }
+
+    .detail > span:last-child {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .details {
+        margin: 25px 20px;
+    }
+
+    .quote {
+        margin: 20px;
+    }
+}
