@@ -1,0 +1,204 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* PAGE */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f6fb;
+    color: #172033;
+}
+
+
+/* APP CONTAINER */
+
+.counter-app {
+    width: min(850px, 100%);
+
+    padding: 50px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e8f0;
+    border-radius: 24px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+
+/* HEADER */
+
+.counter-header {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.counter-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.counter-header p {
+    color: #68758a;
+    font-size: 17px;
+}
+
+
+/* COUNTER DISPLAY */
+
+.counter-display {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    margin-bottom: 30px;
+
+    background: #f4f7fb;
+
+    border: 1px solid #e1e7ef;
+    border-radius: 16px;
+}
+
+.counter-display #count {
+    display: block;
+
+    font-size: 80px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.counter-display p {
+    color: #68758a;
+}
+
+
+/* BUTTONS */
+
+.counter-controls {
+    display: flex;
+    gap: 18px;
+}
+
+.counter-controls button {
+    flex: 1;
+
+    padding: 18px;
+
+    border: none;
+    border-radius: 12px;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#increase-btn {
+    background: #20b77a;
+}
+
+#decrease-btn {
+    background: #f05252;
+}
+
+#reset-btn {
+    background: #3478e5;
+}
+
+.counter-controls button:hover {
+    transform: translateY(-3px);
+}
+
+.counter-controls button:active {
+    transform: translateY(0);
+}
+
+
+/* INFORMATION */
+
+.counter-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 30px;
+    padding: 18px;
+
+    border: 1px solid #e1e7ef;
+    border-radius: 12px;
+
+    color: #68758a;
+}
+
+.counter-info span {
+    font-size: 20px;
+}
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.zero {
+    color: black;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .counter-app {
+        padding: 30px 20px;
+    }
+
+    .counter-header h1 {
+        font-size: 30px;
+    }
+
+    .counter-header p {
+        font-size: 15px;
+    }
+
+    .counter-display {
+        padding: 35px 15px;
+    }
+
+    .counter-display #count {
+        font-size: 60px;
+    }
+
+    .counter-controls {
+        flex-direction: column;
+    }
+
+    .counter-controls button {
+        width: 100%;
+    }
+}
