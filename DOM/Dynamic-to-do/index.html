@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dynamic Todo List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="todo-app">
+
+        <!-- Header -->
+        <header class="todo-header">
+            <h1>My Todo List</h1>
+            <p>Stay organized and productive</p>
+        </header>
+
+
+        <!-- Add Task Form -->
+        <form class="task-form" id="task-form">
+
+            <input
+                type="text"
+                id="task-input"
+                placeholder="What do you need to do?"
+                autocomplete="off"
+            >
+
+            <button type="submit" id="add-btn">
+                Add
+            </button>
+
+        </form>
+
+
+        <!-- Task Section -->
+        <section class="task-section">
+
+            <!-- Task Header -->
+            <div class="task-heading">
+
+                <h2>Tasks</h2>
+
+                <span id="task-count">
+                    0 tasks
+                </span>
+
+            </div>
+
+
+            <!-- Task List -->
+            <div id="task-list" class="task-list">
+
+                <!-- JavaScript will create tasks here -->
+
+            </div>
+
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state">
+
+                <span>✓</span>
+
+                <h3>No tasks yet</h3>
+
+                <p>Add a task to get started.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Clear Completed -->
+        <button
+            type="button"
+            id="clear-completed"
+            class="clear-completed"
+        >
+            Clear Completed
+        </button>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
