@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Management Dashboard</title>
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- DASHBOARD -->
+
+    <main class="dashboard">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h2>Student Management</h2>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-nav">
+
+                <a
+                    href="#"
+                    class="nav-link active"
+                >
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-link"
+                >
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>Students</span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-link"
+                >
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <span>Courses</span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-link"
+                >
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>Settings</span>
+
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <section class="main-content">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div class="header-text">
+
+                    <h1>
+                        Student Management
+                    </h1>
+
+                    <p>
+                        Manage your students efficiently
+                    </p>
+
+                </div>
+
+
+                <!-- Profile -->
+
+                <div class="profile-icon">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- STATISTICS -->
+
+            <section class="stats-section">
+
+
+                <!-- Total Students -->
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <div class="stat-info">
+
+                        <p>Total Students</p>
+
+                        <h2 id="total-students">
+                            0
+                        </h2>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Average Score -->
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <div class="stat-info">
+
+                        <p>Average Score</p>
+
+                        <h2 id="average-score">
+                            0%
+                        </h2>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Top Score -->
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                    </div>
+
+                    <div class="stat-info">
+
+                        <p>Top Score</p>
+
+                        <h2 id="top-score">
+                            0%
+                        </h2>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ADD STUDENT -->
+
+            <section class="add-student-section">
+
+
+                <div class="section-header">
+
+                    <h2>Add Student</h2>
+
+                </div>
+
+
+                <form
+                    id="student-form"
+                    class="student-form"
+                >
+
+
+                    <!-- Student Name -->
+
+                    <div class="form-group">
+
+                        <label for="student-name">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="student-name"
+                            placeholder="Enter student name"
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Age -->
+
+                    <div class="form-group">
+
+                        <label for="student-age">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="student-age"
+                            placeholder="Enter age"
+                            min="1"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Course -->
+
+                    <div class="form-group">
+
+                        <label for="student-course">
+                            Course
+                        </label>
+
+                        <select id="student-course">
+
+                            <option value="">
+                                Select course
+                            </option>
+
+                            <option value="Computer Science">
+                                Computer Science
+                            </option>
+
+                            <option value="Mathematics">
+                                Mathematics
+                            </option>
+
+                            <option value="Physics">
+                                Physics
+                            </option>
+
+                            <option value="Biology">
+                                Biology
+                            </option>
+
+                            <option value="Chemistry">
+                                Chemistry
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Score -->
+
+                    <div class="form-group">
+
+                        <label for="student-score">
+                            Score
+                        </label>
+
+                        <input
+                            type="number"
+                            id="student-score"
+                            placeholder="Enter score (0-100)"
+                            min="0"
+                            max="100"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Add Student Button -->
+
+                    <button
+                        type="submit"
+                        id="add-student-btn"
+                    >
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Student
+
+                    </button>
+
+                </form>
+
+            </section>
+
+
+
+            <!-- STUDENTS -->
+
+            <section class="students-section">
+
+
+                <!-- Students Header -->
+
+                <div class="students-header">
+
+
+                    <div>
+
+                        <h2>Students</h2>
+
+                        <p>
+                            Manage and view all students
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Search + Filter -->
+
+                    <div class="student-controls">
+
+
+                        <!-- Search -->
+
+                        <div class="search-box">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input
+                                type="search"
+                                id="search-input"
+                                placeholder="Search students..."
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+
+
+                        <!-- Course Filter -->
+
+                        <select id="course-filter">
+
+                            <option value="all">
+                                All Courses
+                            </option>
+
+                            <option value="Computer Science">
+                                Computer Science
+                            </option>
+
+                            <option value="Mathematics">
+                                Mathematics
+                            </option>
+
+                            <option value="Physics">
+                                Physics
+                            </option>
+
+                            <option value="Biology">
+                                Biology
+                            </option>
+
+                            <option value="Chemistry">
+                                Chemistry
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- STUDENT LIST -->
+
+                <div
+                    id="student-list"
+                    class="student-list"
+                >
+
+                    <!--
+                        JavaScript will dynamically
+                        create student cards here.
+                    -->
+
+                </div>
+
+
+
+                <!-- EMPTY STATE -->
+
+                <div
+                    id="empty-state"
+                    class="empty-state"
+                >
+
+                    <i class="fa-solid fa-user-graduate"></i>
+
+                    <h3>
+                        No students yet
+                    </h3>
+
+                    <p>
+                        Add a student to get started.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
