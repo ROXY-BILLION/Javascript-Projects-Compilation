@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spice Garden</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Spice Garden</span>
+            </a>
+
+            <button class="nav-btn" id="btn">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#chef">Chef</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="nav-order">
+                Book a Table
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    <i class="fa-solid fa-leaf"></i>
+                    Welcome to Spice Garden
+                </p>
+
+                <h1>
+                    Fresh Flavours,
+                    <span>Wonderful Taste</span>
+                </h1>
+
+                <p class="hero-text">
+                    Experience delicious meals prepared with fresh
+                    ingredients, passion and love.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn primary-btn">
+                        View Menu
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Book a Table
+                    </a>
+
+                </div>
+
+                <div class="hero-socials">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="image-circle"></div>
+
+                <img
+                    src="images/Chef.jpeg"
+                    alt="Restaurant food"
+                >
+
+            </div>
+
+        </section>
+
+
+        <section class="menu section" id="menu">
+
+            <div class="section-heading">
+
+                <p>Our Menu</p>
+
+                <h2>Our Special Dishes</h2>
+
+                <span>
+                    Discover some of our most delicious meals
+                </span>
+
+            </div>
+
+
+            <div class="food-grid">
+
+                <article class="food-card">
+
+                    <div class="food-image">
+                        <img
+                            src="images/Grilled.jpeg"
+                            alt="Grilled chicken"
+                        >
+
+                        <span class="price">$12</span>
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <h3>Grilled Chicken</h3>
+
+                        <p>
+                            Tender grilled chicken served with fresh
+                            vegetables and special sauce.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>$12.00</strong>
+
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="food-card">
+
+                    <div class="food-image">
+
+                        <img
+                            src="images/Fishandveg.jpeg"
+                            alt="Fish and vegetables"
+                        >
+
+                        <span class="price">$15</span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <h3>Fish & Vegetables</h3>
+
+                        <p>
+                            Freshly prepared fish with healthy vegetables
+                            and our signature dressing.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>$15.00</strong>
+
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="food-card">
+
+                    <div class="food-image">
+
+                        <img
+                            src="images/pasta.jpeg"
+                            alt="Pasta dish"
+                        >
+
+                        <span class="price">$14</span>
+
+                    </div>
+
+                    <div class="food-content">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <h3>Special Pasta</h3>
+
+                        <p>
+                            Creamy pasta prepared with fresh herbs,
+                            vegetables and our special sauce.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>$14.00</strong>
+
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="about section" id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="images/prochef.jpeg"
+                    alt="Professional chef"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">About Us</p>
+
+                <h2>
+                    We Create Delicious
+                    <span>Food For You</span>
+                </h2>
+
+                <p>
+                    At Spice Garden, we believe that great food brings
+                    people together. Our chefs use fresh ingredients
+                    and carefully crafted recipes to create memorable
+                    dining experiences.
+                </p>
+
+                <a href="#contact" class="btn primary-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="chef section" id="chef">
+
+            <div class="section-heading">
+
+                <p>Meet Our Chef</p>
+
+                <h2>Our Expert Chef</h2>
+
+                <span>
+                    Passionate about creating unforgettable flavours
+                </span>
+
+            </div>
+
+            <div class="chef-container">
+
+                <div class="chef-image">
+
+                    <img
+                        src="images/chefs.jpeg"
+                        alt="Restaurant chef"
+                    >
+
+                </div>
+
+                <div class="chef-content">
+
+                    <h2>Master Chef</h2>
+
+                    <p>
+                        Our chef combines traditional cooking techniques
+                        with modern flavours to create exceptional dishes.
+                    </p>
+
+                    <div class="chef-socials">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact section" id="contact">
+
+            <div class="contact-content">
+
+                <p class="section-label">Contact Us</p>
+
+                <h2>
+                    Let's Make Your
+                    <span>Reservation</span>
+                </h2>
+
+                <p>
+                    Ready for a delicious experience?
+                    Contact us today and reserve your table.
+                </p>
+
+                <div class="contact-details">
+
+                    <a href="tel:+2348107074843">
+                        <i class="fa-solid fa-phone"></i>
+                        +234 810 707 4843
+                    </a>
+
+                    <a href="mailto:info@spicegarden.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@spicegarden.com
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Lagos, Nigeria
+                    </a>
+
+                </div>
+
+                <a href="#" class="btn primary-btn">
+                    Book a Table
+                    <i class="fa-solid fa-calendar-check"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <i class="fa-solid fa-utensils"></i>
+                Spice Garden
+            </div>
+
+            <p>
+                Fresh food. Great taste. Beautiful moments.
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
