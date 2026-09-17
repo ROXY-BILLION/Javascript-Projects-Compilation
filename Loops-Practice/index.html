@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <header class="dashboard-header">
+            <div>
+                <p class="eyebrow">ACADEMIC PERFORMANCE</p>
+                <h1>Student Results</h1>
+                <p class="subtitle">View and analyze student performance.</p>
+            </div>
+
+            <div class="student-count">
+                <span id="studentCount">0</span>
+                <small>Students</small>
+            </div>
+        </header>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <p>Average Score</p>
+                <h2 id="averageScore">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Passed</p>
+                <h2 id="passedCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Failed</p>
+                <h2 id="failedCount">0</h2>
+            </div>
+
+        </section>
+
+        <section class="controls">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search student..."
+                >
+                <div id="searchResult"></div>
+            </div>
+
+            <select id="sortSelect">
+                <option value="default">Sort Results</option>
+                <option value="highest">Highest Score</option>
+                <option value="lowest">Lowest Score</option>
+            </select>
+
+        </section>
+
+        <section class="results-section">
+
+            <div class="section-heading">
+                <h2>Students</h2>
+                <p>Student performance overview</p>
+            </div>
+
+            <div id="studentList" class="student-list">
+                <!-- JavaScript will add students here -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

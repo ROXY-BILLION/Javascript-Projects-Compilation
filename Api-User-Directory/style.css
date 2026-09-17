@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050816;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* Controls */
+
+.controls {
+    background: #0d1328;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls button {
+    border: none;
+    background: #8b5cf6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+#status {
+    margin-top: 15px;
+    color: #94a3b8;
+}
+
+/* Users */
+
+.users-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* User Card */
+
+.user-card {
+    background: #0d1328;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+}
+
+.user-card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.user-card p {
+    color: #94a3b8;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+    .users-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header h1 {
+        font-size: 34px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+    .container {
+        width: 92%;
+        padding: 40px 0;
+    }
+
+    .users-container {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .controls {
+        padding: 20px;
+    }
+
+    .controls button {
+        width: 100%;
+    }
+}
