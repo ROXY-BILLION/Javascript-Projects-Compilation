@@ -1,0 +1,259 @@
+Project 1 — Expense Tracker
+
+Build an app that allows a user to:
+
+Add an expense
+Enter expense name
+Enter amount
+Store expenses
+Display all expenses
+Calculate total expenses
+Delete an expense
+Search expenses
+Save data with localStorage
+Load expenses after refresh
+
+Challenge: Handle empty/invalid amounts.
+
+Project 2 — Student Result Manager
+
+Build a system where you can:
+
+Add students
+Store name and scores
+Calculate total score
+Calculate average
+Determine pass/fail
+Display students
+Search for a student
+Filter passing students
+Delete a student
+Save/load students
+
+Challenge: Handle students with missing or invalid scores.
+
+Project 3 — Product Inventory
+
+Build a product management application.
+
+Each product should contain information such as:
+
+Name
+Price
+Quantity
+Category
+
+Your application should:
+
+Add products
+Display products
+Calculate inventory value
+Search products
+Filter by category
+Delete products
+Update quantity
+Save/load products
+
+Challenge: Identify products that are out of stock.
+
+Project 4 — Contact Manager
+
+Build a contact application.
+
+Each contact should contain:
+
+Name
+Phone
+Email
+Category
+
+Features:
+
+Add contact
+Display contacts
+Search contacts
+Filter contacts
+Delete contact
+Edit contact
+Save contacts
+Load contacts after refresh
+
+Challenge: Prevent duplicate contacts.
+
+Project 5 — Book Library
+
+Build a personal library.
+
+Each book should have:
+
+Title
+Author
+Genre
+Read status
+
+Features:
+
+Add book
+Display books
+Search books
+Filter by genre
+Filter read/unread
+Mark book as read/unread
+Delete book
+Save/load library
+
+Challenge: Display useful statistics such as total books and unread books.
+
+Project 6 — Task Management System
+
+Build a more advanced version of your Module 7 Task Manager.
+
+Each task should contain:
+
+Title
+Priority
+Status
+
+Features:
+
+Add task
+Display tasks
+Mark task completed
+Delete task
+Search tasks
+Filter by status
+Filter by priority
+Save/load tasks
+
+Challenge: Display separate counts for:
+
+Total
+Pending
+Completed
+Project 7 — Quiz Application
+
+Build a quiz application using an array of question objects.
+
+Each question could contain:
+
+question
+options
+correctAnswer
+
+The application should:
+
+Display questions
+Allow the user to select an answer
+Check the answer
+Track score
+Move through questions
+Display final result
+Restart the quiz
+
+Challenge: Prevent the user from answering the same question multiple times.
+
+Project 8 — API User Explorer
+
+Build an application that retrieves users from a public API.
+
+Your app should:
+
+Fetch users
+Display users
+Show loading status
+Handle errors
+Search users
+Filter users
+Display useful user information
+
+Challenge: Handle the situation where the API fails or returns no matching users.
+
+This tests:
+
+fetch()
+async/await
+try/catch
+response.ok
+JSON
+arrays
+objects
+DOM
+events
+functions
+Project 9 — Personal Notes Manager
+
+Build a complete notes application.
+
+Each note should contain:
+
+Title
+Content
+Category
+
+Features:
+
+Create note
+Display notes
+Search notes
+Filter by category
+Delete note
+Edit note
+Save to localStorage
+Load after refresh
+
+Challenge: Display the number of notes currently stored.
+
+🏆 Project 10 — Mini Business Management System
+
+This is your final boss.
+
+Build a small management system of your choice.
+
+You decide what the business manages.
+
+Examples:
+
+Restaurant
+School
+Shop
+Gym
+Hotel
+Car rental
+Freelance business
+
+Your application must have:
+
+Data
+
+Use arrays of objects.
+
+Features
+
+At least:
+
+Create
+Read/display
+Search
+Filter
+Update
+Delete
+Statistics
+Validation
+localStorage
+Load saved data
+DOM interactions
+Logic
+
+Use:
+
+Variables
+Conditions
+Loops
+Functions
+Arrays
+Objects
+Array methods
+DOM
+Events
+localStorage
+JSON
